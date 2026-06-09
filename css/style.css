@@ -1,12 +1,10 @@
 body{
-    font-size: Ariel;
+    font-size: Ariel, sans-serif;
     text-align: center;
     background-color: #ffe5ec; /*stawberry rosa*/
      
 
 }
-
- 
 
 .keyboard{
       background: #d8f3dc;
