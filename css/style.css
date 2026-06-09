@@ -2,25 +2,11 @@ body{
     font-size: Ariel;
     text-align: center;
     background-color: #ffe5ec; /*stawberry rosa*/
-    color: #333;
+     
 
 }
 
-#screen{
-    margin:20px auto;
-    width: 60%;
-    height:70px;
-    background: #fffaf7;
-    border:2px solid #a7d7b5;
-    border-radius: 15px;
-    font-size: 28px;
-    padding: 10px;
-    color: #4a4a4a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08)
-}
+ 
 
 .keyboard{
       background: #d8f3dc;
@@ -45,23 +31,29 @@ body{
     color:#5a3e36;
     font-weight:bold;
     cursor: pointer;
-     
-     
-}
-.key:hover{
-    transform:scale(0.92);
+    
 }
 .key:hover{
     background: #95d5b2;
 }
+ .key{
+    transition: 0.15s;
+ }
 .active{
-    background: linear-gradient(145deg, #ff8fab, #7bdcb5);
-    color:white;
+    animation:pop 0.15s;
+
 }
-.key[data-key="SPACE"] {
-    width: 200PX;
-}
-     
+   @keyframes pop{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform: scale(0.85);
+    }
+    100%{
+        transform: scale(1);
+    }
+   }  
     .key:nth-child(even){
     background: #b7e4c7;
 }
