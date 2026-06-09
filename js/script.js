@@ -1,29 +1,12 @@
-document.addEventListener("keydown", function(Event) {
-    let key= Event.key.toUpperCase();
-    let box= document.querySelector( `[data-key="${key}"]`);
-    let text= document.getElementById("text");
-    let ljud= document.getElementById("ljud");
-     
-    if(text) {
-        text.textContent =key;
-        box.classList.add("active");
-    }
-    if (ljud) {
-        ljud.currentTime =0;
-        ljud.play();
-    }
-});    
+constsound=document.getElementById("keysound");
+    document.querySelectorAll(".key"). forEach(key=>{
+        key.addEventListener("click", () => {
+            sound.currentTime=0;
+            sound.play();
+            key.classList.add("active");
 
-document.addEventListener("keyup",function(Event) {
-    let key= Event.key.toUpperCase();
-let box= document.querySelector(` [data-key="${key}"]`);
-if (box) {
-box.classList.remove("active");
-}
-        
-}); 
-document.addEventListener("keydown", function(Event) {
-    let ljud= document.getElementById("ljud");
-    ljud.currentTime= 0;
-    ljud.play();
-});
+            setrTimeout(() =>{
+                key.classList.remove("active");
+            } ,150);
+         });
+        });
