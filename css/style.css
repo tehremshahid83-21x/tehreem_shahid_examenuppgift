@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    font-family:  Arial;
+    color:black
+
+}
+.keyboard{
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 6px;
+
+     
+}
+
+.key{
+    width: 60px;
+    height: 70px;
+    background-color:rgba(0, 0, 0, 0.151);
+    color:rgba(57, 42, 42, 0.655);
+    font-size: 25px;
+    line-height: 60px;
+    border-radius: 10px;
+}
+.active{
+    background-color: brown;
+    color:black;
+}
