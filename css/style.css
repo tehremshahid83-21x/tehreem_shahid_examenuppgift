@@ -4,7 +4,13 @@ body{
     background-color: linear-gradient(135 deg, #ffe4ec, #dff7e3);
     color: #333;
 
+}
 
+.screen{
+    margin:20px auto;
+    width: 60%;
+    height:70px;
+    background: #fffaf7;
 }
 .keyboard{
      display:flex;
