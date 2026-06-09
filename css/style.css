@@ -6,7 +6,7 @@ body{
 
 }
 
-.screen{
+#screen{
     margin:20px auto;
     width: 60%;
     height:70px;
@@ -21,25 +21,38 @@ body{
     justify-content: center;
     box-shadow: 0 6px 20px rgba(0,0,0,0.08)
 }
+
 .keyboard{
      display:flex;
      flex-wrap: wrap;
      justify-content: center;
-     gap: 6px;
+     gap: 10px;
+     margin-top: 30px;
 
      
 }
 
 .key{
-    width: 60px;
-    height: 70px;
-    background-color:rgba(0, 0, 0, 0.151);
-    color:rgba(57, 42, 42, 0.655);
-    font-size: 25px;
-    line-height: 60px;
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(145 deg, #f9b6c8, #b7e4c7);
+    color:#2d2d2d;
+    display:flex;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.15s;
+     user-select: none;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+.key:hover{
+    transform:scale(0.92);
 }
 .active{
-    background-color: brown;
+    background: linear-gradient(145deg, #ff8fab, #7bdcb5);
     color:white;
+}
+.key[data-key="SPACE"] {
+    width: 200PX;
 }
