@@ -7,7 +7,7 @@ constsound= document.getElementById("fil");
             sound.play();
             key.classList.add("active");
 
-            setrTimeout(() => {
+            setTimeout(() => {
                 key.classList.remove("active");
             } ,150);
          });
