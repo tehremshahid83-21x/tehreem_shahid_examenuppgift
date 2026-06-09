@@ -2,12 +2,14 @@ body{
     font-size: Ariel, sans-serif;
     text-align: center;
     background-color: #ffe5ec; /*stawberry rosa*/
-     
+    background-image: url("../fil/Skärmbild\ 2026-06-09\ 225812.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
 .keyboard{
-      background: #d8f3dc;
+      background:#ffb3c698;
       padding: 20px;
       border-radius: 20px;
       width:fit-content;
