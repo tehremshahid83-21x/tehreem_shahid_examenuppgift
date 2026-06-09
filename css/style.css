@@ -1,8 +1,9 @@
 body{
+    font-size: Ariel;
     text-align: center;
-    font-family:  Arial;
-    color:black¨;
-    background-color: linear-gradient(135 deg, #ffe4ec);
+    background-color: linear-gradient(135 deg, #ffe4ec, #dff7e3);
+    color: #333;
+
 
 }
 .keyboard{
