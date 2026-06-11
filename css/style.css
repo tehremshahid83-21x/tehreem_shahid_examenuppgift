@@ -3,7 +3,8 @@ h1{
     font-family:  cursive, Helvetica, sans-serif;
     color: #ffb3ba;
     text-shadow: 2px , 2px ,#baffc9 ;
-    
+    font-size: 40px;
+    letter-spacing: 2px;
      
 }
 body{
